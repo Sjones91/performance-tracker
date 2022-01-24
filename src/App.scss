@@ -1,0 +1,88 @@
+//variables
+$primaryCol: #F9F8F8;
+$secondryCol: #2D728F;
+$tertiaryCol: #74A57F;
+$compCol: #1e4758;
+
+//commonly used styles
+
+
+.d-f-row {
+  display: flex;
+}
+.d-f-col{
+  display: flex;
+  flex-direction: column;
+}
+//Main styles
+.body {
+  height: 100vh;
+  background-image: url("./media/background-main.jfif");
+  background-size: cover;
+  background-color: rgb(41, 41, 41);
+  background-blend-mode: multiply;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+//*****************************header***********************************
+.header {
+  background: $secondryCol;
+  border-bottom: $compCol solid 8px;
+  opacity: 80%;
+  height: 6rem;
+  color: $primaryCol;
+  margin: 0;
+}
+.headTitle {
+ font-size: 1.5rem;
+ text-align: center;
+ align-self: center;
+}
+//*****************************Main Page***********************************
+//*****************************Nav Bar***********************************
+.nav {
+  background: $secondryCol;
+  align-content: center;
+  border-radius: 10px 10px 0 0;
+  
+}
+.nav-list {
+  list-style-type: none;
+  color: $primaryCol;
+  justify-content: center;
+  margin-left: -8%;
+}
+.nav-item {
+  
+  background-color: $tertiaryCol;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.7rem 0.5rem;
+  width: 25%;
+  align-content: space-around;
+  margin: auto;
+  font-weight: 700;
+
+}
+//*****************************Page Content***********************************
+.content {
+  display:flex;
+  flex-direction: column;
+  background: red;
+  width: 95%;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+//*****************************Media Queries***********************************
+@media screen and (min-width:720px) {
+  .content {
+    flex-direction: row;
+    color: white
+  }
+  .nav{
+    flex-direction: column;
+  }
+}
