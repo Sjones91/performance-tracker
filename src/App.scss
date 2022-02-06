@@ -43,7 +43,13 @@ $compCol2: #1e5066;
  align-self: center;
  margin: auto;
 }
-
+.timeDate {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: white;
+  opacity: 120%;
+}
 //*****************************Main Page***********************************
 //*****************************Nav Bar***********************************
 .nav {

@@ -1,10 +1,11 @@
-
+import "../App.scss"
 function TimeAndDate() {
     const myCurrentDate = new Date();
-    var date = myCurrentDate.getHours() +":" + myCurrentDate.getMinutes()  + " " + myCurrentDate.getDate() + "." + (myCurrentDate.getMonth()+1) + "." + myCurrentDate.getFullYear()
-
+    var time =  myCurrentDate.getHours() +":" + myCurrentDate.getMinutes()  + " " 
     return (
-        <p>{date}</p>
+        <div className="timeDate">
+            <h4>{time}</h4>
+        </div>
     )
 
 }
